@@ -1,0 +1,56 @@
+<html>
+    <head> 
+        <title>
+            Icons
+    
+        </title>
+
+        <style>
+            .row{
+                width: 720px;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 20px;
+            }
+        </style>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script> 
+    </head>
+
+    <body style="background-color: rgb(42, 100, 125);">
+
+    <div class="row">
+
+    <div class="image-container"><img id="Sun" src="img/sun 2.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="Wind" src="img/wind.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="CLoud" src="img/Cloud 2.png" width="200" height="200"/></div>
+    </div>
+
+    <div class="row">
+
+    <div class="image-container"><img id="Cloud Rain" src="img/Cloud Rain 2.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="Cloud Lightning" src="img/Cloud Lightning 2.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="Cloud Icy" src="img/Cloud Icy.png" width="200" height="200"/></div>
+    </div>
+
+    <div class="row">
+
+    <div class="image-container"><img id="Snow Flake" src="img/Snow Flake 2.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="Ocean" src="img/Ocean.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="Fire" src="img/Fire.png" width="200" height="200"/></div>
+    </div>
+
+
+    <script> 
+    var sound1 = new buzz.sound("Sounds/04.wav")
+    
+    window.onload = function() {
+        document.getElementById('Ocean').addEventListener('click', function () {sound1.play();})
+    }
+    </script>
+
+</body>
+
+</html>
